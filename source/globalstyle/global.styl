@@ -1,0 +1,90 @@
+/*==========================================================
+Global variables and styles
+==========================================================*/
+max-content-width = 950px
+inner-content-width = 750px
+mobile-side-padding = 15px
+
+
+/*==========================================================
+CD font family 
+==========================================================*/
+
+@font-face 
+    font-family: "x"
+    src: url("/font/x.otf")
+
+@font-face
+    font-family: "basicfont"
+    src: url("/font/OS.ttf")
+
+@font-face
+    font-family: "lato"
+    src: url("/font/lato-Regular.ttf")
+
+@font-face
+    font-family: "monti"
+    src: url("/font/montserratbold.ttf")
+
+
+/*==========================================================
+CI color 
+==========================================================*/
+
+cd-gray = #f2eff6
+cd-red =  #a61e1e
+cd-regular = black
+
+/*==========================================================
+CD font styles
+==========================================================*/
+// H1 HEADLINE 17pt Laufweite 200
+body
+    color cd-regular
+
+h1
+    font-size: 30pt
+    // letter-spacing: 3.4pt
+    font-family: "x"
+    color: cd-red
+
+h2 
+    font-size: 18px
+    font-family: "monti"
+
+h3 
+    font-family: lato
+    font-size: 15px
+
+    
+p
+    font-family: lato
+
+/*==========================================================
+Footer content block
+==========================================================*/
+.max-content
+    max-width 850px
+    margin auto
+    padding-left: mobile-side-padding
+    padding-right: mobile-side-padding
+
+paddingless-width = (max-content-width + (2 * mobile-side-padding))
+@media screen and (min-width: paddingless-width)
+    .max-content
+        padding-left: 0
+        padding-right: 0
+
+
+.max-content-servicesection
+    max-width 1000px
+    margin: auto
+
+
+
+
+
+
+
+
+
